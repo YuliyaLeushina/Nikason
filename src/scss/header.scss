@@ -23,7 +23,7 @@
 .burger {
    @media (max-width: $mobile) {
       position: relative;
-
+      padding-left: 20px;
       &::after {
          content: "";
          position: absolute;
@@ -127,7 +127,7 @@
       &::after {
          content: "";
          transition: all 0.3s ease 0s;
-         right: 0;
+         right: 19px;
          position: absolute;
          width: 100%;
          height: rem(3);
