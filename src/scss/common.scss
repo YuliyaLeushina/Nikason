@@ -1,0 +1,54 @@
+// Заголовки, общие БЄМ блоки и проче...
+.btn {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 150%;
+   color: #f6f6f6;
+   width: 245px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #a1b29f;
+   transition: all 0.3s ease 0s;
+   &:hover {
+      background: #715b4b;
+   }
+}
+.icon-tumblr {
+   font-size: 30px;
+   color: #715b4b;
+   transition: all 0.3s ease 0s;
+   &:hover {
+      color: #a1b29f;
+   }
+}
+.icon-twitter {
+   font-size: 30px;
+   color: #715b4b;
+   transition: all 0.3s ease 0s;
+   &:hover {
+      color: #a1b29f;
+   }
+}
+.icon-facebook {
+   font-size: 30px;
+   color: #715b4b;
+   transition: all 0.3s ease 0s;
+   &:hover {
+      color: #a1b29f;
+   }
+}
+.title {
+   font-family: "Tenor Sans";
+   font-style: normal;
+   font-weight: normal;
+   @include adaptiveValue("font-size", 48, 32);
+   line-height: 120%;
+   padding-bottom: 40px;
+   color: #57463a;
+   max-width: 514px;
+   @media (max-width: $mobile) {
+      padding-bottom: 20px;
+   }
+}
