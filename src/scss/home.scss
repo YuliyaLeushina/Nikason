@@ -22,7 +22,10 @@
          object-fit: cover;
       }
    }
-
+   &__title {
+      max-width: 514px;
+      padding-bottom: 40px;
+   }
    &__content {
       flex: 0 1 562px;
       display: flex;
@@ -99,5 +102,47 @@
    &__facebook {
    }
 }
+.brand {
+   &__container {
+      @include adaptiveValue("padding-top", 160, 90);
+   }
 
+   &__title {
+      @include adaptiveValue("margin-bottom", 100, 60);
+      width: 100%;
+   }
+
+   &__items {
+      display: flex;
+      margin-bottom: 10px;
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         width: 100%;
+         flex: 0 1 auto;
+      }
+   }
+
+   &__item {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #323232;
+      padding-bottom: 14px;
+      border-bottom: 3px solid #715b4b;
+      &:not(:last-child) {
+         margin-right: 46px;
+      }
+      flex: 0 1 33%;
+      @media (max-width: $mobile) {
+         &:not(:first-child) {
+            padding-top: 40px;
+         }
+
+         &:not(:last-child) {
+            margin-right: 0px;
+         }
+      }
+   }
+}
 //====================================================================================================

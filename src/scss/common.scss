@@ -45,9 +45,9 @@
    font-weight: normal;
    @include adaptiveValue("font-size", 48, 32);
    line-height: 120%;
-   padding-bottom: 40px;
+
    color: #57463a;
-   max-width: 514px;
+
    @media (max-width: $mobile) {
       padding-bottom: 20px;
    }
