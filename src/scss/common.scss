@@ -47,4 +47,8 @@
    line-height: 120%;
 
    color: #57463a;
+   &__fammaly {
+      @include adaptiveValue("margin-top", 160, 90);
+      @include adaptiveValue("margin-bottom", 100, 60);
+   }
 }

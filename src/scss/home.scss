@@ -7,6 +7,15 @@
       flex-direction: column-reverse;
       border: none;
    }
+   &_famally {
+      border: none;
+      @media (min-width: $mobile) {
+         background-color: #ebeeeb;
+      }
+      @media (max-width: $mobile) {
+         flex-direction: column;
+      }
+   }
    &__img {
       flex: 0 1 50%;
       max-height: 774px;
@@ -29,6 +38,13 @@
       @media (max-width: $mobile) {
          padding-bottom: 20px;
       }
+      &_small {
+         font-size: 24px;
+         padding-top: 68px;
+         @media (max-width: $mobile) {
+            padding-top: 0;
+         }
+      }
    }
    &__content {
       flex: 0 1 562px;
@@ -38,6 +54,12 @@
       @media (max-width: $mobile) {
          height: 100vh;
          padding: 30px 15px 0px 38px;
+      }
+      &_famally {
+         height: auto;
+         @media (max-width: $mobile) {
+            flex: 0 1 auto;
+         }
       }
    }
 
@@ -52,12 +74,16 @@
          overflow: hidden;
          justify-content: space-between;
       }
+      &_famally {
+         height: auto;
+      }
    }
 
    &__body {
    }
 
    &__label {
+      display: block;
       font-weight: 300;
       font-size: 16px;
       line-height: 150%;
@@ -71,6 +97,7 @@
    }
 
    &__sub-title {
+      display: block;
       font-weight: 300;
       font-size: 18px;
       line-height: 150%;
@@ -187,6 +214,10 @@
       img {
          transform: translateY(-10px);
       }
+      .item__title {
+         color: #715b4b;
+         font-weight: 400;
+      }
    }
    img {
       display: block;
@@ -204,6 +235,25 @@
       font-size: 18px;
       line-height: 102.99%;
       color: #323232;
+   }
+}
+.video {
+   &__container {
+      @include adaptiveValue("padding-top", 160, 90);
+   }
+
+   &__title {
+      @include adaptiveValue("margin-bottom", 100, 20);
+   }
+
+   &__block {
+      height: 700px;
+      @include adaptiveValue("height", 700, 227);
+
+      video {
+         width: 100%;
+         height: 100%;
+      }
    }
 }
 
